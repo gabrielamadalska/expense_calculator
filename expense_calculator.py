@@ -8,10 +8,11 @@ class MyGUI:
 
         self.menubar = tk.Menu(self.root)
         
-        self.filemenu = tk.Menu(self.menubar, tearoff=0)
+        # pasek zadan
+        self.filemenu = tk.Menu(self.menubar, tearoff=1)
         self.filemenu.add_command(label="Close", command= exit) 
         
-        self.menubar.add_cascade(menu=self.filemenu, label = "File")
+        self.menubar.add_cascade(menu=self.filemenu, label = "X")
 
         self.root.config(menu=self.menubar)
 

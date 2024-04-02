@@ -43,7 +43,7 @@ class MyGUI:
         self.button = tk.Button(self.root, text = "Calculate", font=('Arial', 10), command=self.calculate)
         self.button.grid(row=2, column=1, padx=10, pady=5, )
 
-        self.saving_label = tk.Label(self.root, text="Savings: ")
+        self.saving_label = tk.Label(self.root, text="")
         self.saving_label.grid(row=3, column=1, padx=10, pady=5)
 
         self.root.mainloop() # wyslwetla

@@ -62,8 +62,8 @@ class MyGUI:
             income = float(self.income_entry.get())
             outcome = float(self.outcome_entry.get())
             savings = income - outcome
-            self.saving_label .config(text="Savings: {:.2f}".format(savings))
+            self.saving_label.config(text="Savings: {:.2f}".format(savings))
         except ValueError as e:
-            print("Value error")
+            self.saving_label.config(text="Value error")
 
 moje_GUI = MyGUI()
